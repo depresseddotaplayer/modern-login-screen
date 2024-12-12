@@ -19,30 +19,42 @@ body {
     font-family: var(--primary-font);
 }
 
-section {
+.form-container {
     background-color: rgba(13, 13, 13, 0.9);
     border-radius: 31px;
     width: 951px;
     height: 545px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     color: rgba(242, 242, 242, 1);
 }
 
-section h1 {
+.form-container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container form h1 {
     margin: 2.125rem 0 2.5625rem 0;
     font-size: 4rem;
     font-weight: 400;
 }
 
-section h2 {
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group label {
     margin: 0 0 0.5625rem 4.125rem;
     align-self: flex-start;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
-section div:nth-of-type(1) {
+.form-group input {
     margin: 0 0 1.5625rem 0;
     width: 818px;
     min-height: 58px;
@@ -50,18 +62,20 @@ section div:nth-of-type(1) {
     border-radius: 11px;
 }
 
-section div:nth-of-type(2) {
+.form-group:nth-of-type(2) input {
+    margin: 0 0 0 0;
+}
+
+.form-group:nth-of-type(2) {
     margin: 0 0 3.75rem 0;
-    width: 818px;
-    min-height: 58px;
-    background-color: rgba(242, 242, 242, 1);
-    border-radius: 11px;
 }
 
 .login {
     width: 818px;
     min-height: 82px;
+    color: rgba(242, 242, 242, 1);
     background-color: rgba(86, 130, 140, 1);
+    border: none;
     border-radius: 11px;
     display: flex;
     justify-content: center;
