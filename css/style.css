@@ -57,6 +57,8 @@ body {
 .form-group input {
     margin: 0 0 1.5625rem 0;
     width: 818px;
+    border: none;
+    outline: none;
     padding: 10px;
     font-size: 1rem;
     min-height: 58px;
