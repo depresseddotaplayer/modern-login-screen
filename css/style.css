@@ -1,3 +1,4 @@
+
 :root {
     --primary-font: 'Prompt', sans-serif;
     --base-spacing: 16px;
@@ -5,7 +6,9 @@
 
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    line-height: 1.208;
 }
 
 body {
@@ -28,14 +31,41 @@ section {
 }
 
 section h1 {
-    margin: 2.125rem 0 0 0;
+    margin: 2.125rem 0 2.5625rem 0;
     font-size: 4rem;
     font-weight: 400;
 }
 
 section h2 {
-    margin: 2.5625rem 0 0 4.125rem;
+    margin: 0 0 0.5625rem 4.125rem;
     align-self: flex-start;
     font-weight: 400;
+}
+
+section div:nth-of-type(1) {
+    margin: 0 0 1.5625rem 0;
+    width: 818px;
+    min-height: 58px;
+    background-color: rgba(242, 242, 242, 1);
+    border-radius: 11px;
+}
+
+section div:nth-of-type(2) {
+    margin: 0 0 3.75rem 0;
+    width: 818px;
+    min-height: 58px;
+    background-color: rgba(242, 242, 242, 1);
+    border-radius: 11px;
+}
+
+.login {
+    width: 818px;
+    min-height: 82px;
+    background-color: rgba(86, 130, 140, 1);
+    border-radius: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:  2.25rem;
 }
 
